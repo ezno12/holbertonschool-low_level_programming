@@ -21,14 +21,11 @@ int main(void)
 		printf("is zero");
 	  }
 
-	if (n<0)
+	else
 	  {
 		printf("is negative");
 	  }
-	else
-	  {
-		 printf("put integer");
-	  }
+
 
 	return (0);
 }
