@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-
+/*
+*main - main function
+*/
 int main(void)
 {
 int n;
