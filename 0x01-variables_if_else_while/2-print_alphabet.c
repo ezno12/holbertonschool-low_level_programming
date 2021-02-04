@@ -1,9 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
-*main - main function
-*
+/**
+* main - print alphabet
+*Description: print all alphabets
 *return:0 :is sucess
 */
 int main(void)
