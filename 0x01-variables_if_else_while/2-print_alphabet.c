@@ -6,7 +6,7 @@
 *
 *return:0 :is sucess
 */
-int main() {
+int main(void){
     char c;
     for (c = 'a'; c <= 'z'; ++c)
         putchar(c);
