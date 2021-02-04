@@ -3,6 +3,8 @@
 #include <stdio.h>
 /*
 *main - main function
+*
+*return:0 is sucess
 */
 int main(void)
 {
