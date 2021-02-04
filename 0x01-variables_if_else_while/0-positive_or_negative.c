@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
-*main - main function
+/**
+* main - checkin  intiger sgine
 *
-*return:0 is sucess
+* Return: 0 (success)
 */
 int main(void)
 {
