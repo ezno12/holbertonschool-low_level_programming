@@ -3,8 +3,8 @@
 #include <stdio.h>
 /**
 * main - print alphabet
-*Description: print all alphabets
-*return:0 :is sucess
+*
+* Return:0  (sucess)
 */
 int main(void)
 {
