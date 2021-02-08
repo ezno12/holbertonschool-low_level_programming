@@ -9,9 +9,19 @@
 int main(void)
 {
 int c;
-for (c = 0; c < 9; ++c)
+int d;
+for (c = '0'; c <= '9'; ++c)
 {
-printf("%i", c);
+for (d = '0'; d <= '9'; ++d)
+{
+if (d != '0' || c != '0')
+{
+putchar(',');
+putchar(' ');
+}
+putchar(c);
+putchar(d);
+}
 }
 putchar('\n');
 return (0);
