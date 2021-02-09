@@ -1,6 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-#include <holberton.h>
+#include "holberton.h"
 /**
 * main - print alphabet
 *
