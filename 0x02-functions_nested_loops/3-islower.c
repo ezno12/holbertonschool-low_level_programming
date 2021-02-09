@@ -1,17 +1,17 @@
-#include <holberton.h>
+#include "holberton.h"
 /**
-* _islower -function to get lowercase alphabet
-*
-* @c: charachterc is an input integer to check cases
-*
-* Return:0  (sucess)
+*_islower - 0
+*@c: an  integer for loop
+*Return: zero or one for success
 */
 int _islower(int c)
 {
-if ((c >= 97) && (c <= 122))
-_putchar('1');
+if (c >= 'a' && c <= 'z')
+{
+return (1);
+}
 else
-_putchar('0');
-_putchar('\n');
+{
 return (0);
+}
 }
