@@ -1,14 +1,14 @@
 #include <holberton.h>
 /**
-* _islower -function to checl lower case alphabets
+* _isalpha -function to checl lower case alphabets
 *
 * @c: is int parameter couting
 *
 * Return:0 or 1 (sucess)
 */
-int _islower(int c)
+int _isalpha(int c)
 {
-if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
+if (((c >= 97) && (c <= 122)) || ((c >= 65) && (c <= 90)))
 _putchar('1');
 else
 _putchar('0');
