@@ -1,11 +1,10 @@
-#include <holberton.h>
+#include "holberton.h"
+
 /**
-* print_sign - define sign of int.
-*
-*@n: is input integer.
-*
-* Return:0  (sucess)
-*/
+ * print_sign - check sign of int.
+ * @n: integer counter.
+ * Return: 0 1 -1 for sucess.
+ */
 int print_sign(int n)
 {
 if (n > 0)
