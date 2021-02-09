@@ -1,19 +1,20 @@
 #include "holberton.h"
+
 /**
-* main - print alphabet
-*
-* Return:0  (sucess)
-*/
-int _abs(int n )
+ * _abs - check valeur absul .
+ * @x: integer.
+ * Return: neg/pos/0.
+ */
+int _abs(int n)
 {
-if (n > 0)
-{
-return(n);
-}
-if elsr(n < 0)
-{
-return(n = n * -1);
-}
-else
-return (0);
+	if (n > 0)
+	{
+		return (n);
+	}
+	else if (n < 0)
+	{
+		return (n = n * -1);
+	}
+	else
+		return (0);
 }
