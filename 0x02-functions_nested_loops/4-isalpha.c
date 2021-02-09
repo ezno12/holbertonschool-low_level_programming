@@ -2,16 +2,16 @@
 /**
 * _islower -function to checl lower case alphabets
 *
-* @c: is int parameter contain code ASCii of alphabets
+* @c: is int parameter couting
 *
-* Return:0  (sucess)
+* Return:0 or 1 (sucess)
 */
 int _islower(int c)
 {
 if (((c >= 97) && (c <= 122)) || ((c >= 65) && (c <= 90)))
-putchar('1');
+_putchar('1');
 else
-putchar('0');
-putchar('\n');
+_putchar('0');
+_putchar('\n');
 return (0);
 }
