@@ -1,14 +1,15 @@
 #include "holberton.h"
 /**
-* print_alphabet_x10 - print 10 x alphabet with new line each.
+* print_alphabet_x10 - print 10xalphabet.
 *
-* Return:0  (sucess).
+* Return: no return.
 */
 void print_alphabet_x10(void)
 {
 char c;
 int i;
-for (i = 1; i <= 10; i++)
+
+for (i = 1; i <= 10; ++c)
 {
 for (c = 'a'; c <= 'z'; ++c)
 {
