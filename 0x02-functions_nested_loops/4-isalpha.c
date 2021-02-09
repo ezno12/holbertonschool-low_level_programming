@@ -8,10 +8,12 @@
 */
 int _isalpha(int c)
 {
-if (((c >= 'a') && (c <= 'z')) || ((c >= 'A') && (c <= 'Z')))
-_putchar('1');
+if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+{
+return (1);
+}
 else
-_putchar('0');
-_putchar('\n');
+{
 return (0);
+}
 }
