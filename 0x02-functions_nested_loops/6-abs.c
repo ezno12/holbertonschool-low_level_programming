@@ -2,7 +2,7 @@
 
 /**
  * _abs - check valeur absul .
- * @x: integer.
+ * @n: integer.
  * Return: neg/pos/0.
  */
 int _abs(int n)
