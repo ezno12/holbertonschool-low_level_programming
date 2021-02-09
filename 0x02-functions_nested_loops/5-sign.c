@@ -1,12 +1,12 @@
 #include <holberton.h>
 /**
-* main - print alphabet.
+* print_sign - define sign of int.
 *
 *@n: is input integer.
 *
 * Return:0  (sucess)
 */
-int print_sign(int n);
+int print_sign(int n)
 {
 if (n > 0)
 _putchar('+');
