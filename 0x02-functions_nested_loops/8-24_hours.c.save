@@ -1,0 +1,16 @@
+#include "holberton.h"
+/**
+*print_last_digit - 0
+*@n: integer
+*Return: last digit
+*/
+void jack_bauer(void)
+{
+int i;
+if (n < 0)
+{
+int i, j, x, z;
+int c;
+int d;
+for (i = 0; i < 24; i++)
+}
