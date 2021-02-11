@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* mul : function multipl
+* mul - function multipl
 *
 * @a : integer agru
 * @b : integer agru
