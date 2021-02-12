@@ -1,6 +1,6 @@
 #include "holberton"
 /***
-* print_most_numbers : print number sans2 & 4
+* print_most_numbers - print number sans2 & 4
 *
 * Retrun: void.
 */
