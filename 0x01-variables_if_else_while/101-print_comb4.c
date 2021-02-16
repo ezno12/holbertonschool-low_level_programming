@@ -1,34 +1,45 @@
 #include <stdio.h>
 /**
-*main - maine function
+* main - Entry point
 *
-*Return: 0, sucessed
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int x, y, z;
-
-for (x = '0'; x <= '9'; ++x)
+int i, j, y;
+i = 48;
+j = 49;
+y = 50;
+while  ((i < 56) && (j < 57) && (y < 58))
 {
-for (y = x; y <=  '9'; ++y)
+putchar(i);
+putchar(j);
+putchar(y);
+if ((i == 55) && (j == 56) && (y == 57))
 {
-for (z = e; z <=  '9'; ++z)
-{
-if (x != y && x != z && y != z)
-{
-if (x != '0' || y != '1' || z != '2')
+putchar('\n');
+i++;
+j++;
+y++;
+}
+else
 {
 putchar(',');
 putchar(' ');
+if (y < 57)
+{
+y++;
 }
-putchar(x);
-putchar(y);
-putchar(z);
+else if ((j < 56) && (y == 57))
+{
+y = 1 + ++j;
+}
+else
+{
+j = ++i + 1;
+y = j + 1;
 }
 }
 }
-}
-
-putchar('\n');
 return (0);
 }

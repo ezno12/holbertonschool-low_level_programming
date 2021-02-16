@@ -1,19 +1,22 @@
-#include "holberton"
-/***
-* more_numbers : print number sans2 & 4
+#include "holberton.h"
+/**
+* more_numbers - print 10x numb
 *
-* Retrun: void.
+*Return:void
 */
 void more_numbers(void)
 {
-int c;
-for (c = 0; c <= 14; ++c)
+int i, j;
+for (i = 0; i < 10; i++)
 {
-if ( c > 9)
+for (j = 0; j <= 14; j++)
 {
-_putchar(c /10 + '0');
+if (j >= 10)
+{
+_putchar('0' + j / 10);
 }
-_putchar(c);
+_putchar('0' +  j % 10);
 }
 _putchar('\n');
+}
 }
