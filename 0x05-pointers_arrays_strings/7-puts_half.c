@@ -14,8 +14,24 @@ while (*str[c] != '\0')
 {
 c++;
 }
-for (i = c ; i < c / 2; --i)
+i = c;
+c = i / 2;
+if (i % 2 == 0)
 {
-_putchar(*str[i]);
+while (c < i)
+{
+_putchar(str[c]);
+c++;
 }
+}
+else
+{
+c += 1;
+while ( c < i)
+{
+_putchar(str[c]);
+c++;
+}
+}
+_putchar('\n');
 }
