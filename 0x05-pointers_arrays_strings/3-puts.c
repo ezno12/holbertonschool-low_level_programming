@@ -1,17 +1,17 @@
 #include "holberton.h"
 /**
-* _puts - print string
+* _puts - print a string
 *
-*@str: pionter
+* @str: pointer
 *
-* Return: Void
+* return:void
 */
 void _puts(char *str)
 {
-int c ;
-for ( c = 0; str[i] != '\0'; ++c)
+int i;
+for (i = 0; str[i] != '\0'; i++)
 {
-_putchar(str[c]);
+_putchar(str[i]);
 }
 _putchar('\n');
 return;
