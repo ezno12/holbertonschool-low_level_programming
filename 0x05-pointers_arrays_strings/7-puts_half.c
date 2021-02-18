@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* puts_half - function print the second half of string
+* puts_half - print  2nd half of string
 *
 *@str: pionter
 *
@@ -8,29 +8,29 @@
 */
 void puts_half(char *str)
 {
-int c = 0;
-int i;
-while (*str[c] != '\0')
+int i, j;
+i = 0;
+while (str[i] != '\0')
 {
-c++;
+i++;
 }
-i = c;
-c = i / 2;
-if (i % 2 == 0)
+j = i;
+i = j / 2;
+if (j % 2 == 0)
 {
-while (c < i)
+while (i < j)
 {
-_putchar(str[c]);
-c++;
+_putchar(str[i]);
+i++;
 }
 }
 else
 {
-c += 1;
-while ( c < i)
+i += 1;
+while (i < j)
 {
-_putchar(str[c]);
-c++;
+_putchar(str[i]);
+i++;
 }
 }
 _putchar('\n');
