@@ -19,5 +19,4 @@ k--;
 _putchar(rev[j]);
 }
 _putchar('\n');
-return;
 }
