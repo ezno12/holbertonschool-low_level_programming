@@ -19,6 +19,6 @@ void rev_string(char *s)
         s[numb - 1 - g] = tmpry;
     }
     for(g = 0; g < numb; g++)
-        _putchar(strg[g]);
-    _putchar(" \n ");
+        _putchar(s[g]);
+    _putchar('\n');
 }
