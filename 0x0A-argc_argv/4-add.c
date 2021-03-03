@@ -21,7 +21,7 @@ return (1);
 }
 }
 }
-for (i = 1; i < argc; i++)
+for (y = 1; y < argc; y++)
 {
 x += atoi(argv[y]);
 }
