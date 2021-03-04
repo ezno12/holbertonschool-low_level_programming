@@ -2,33 +2,33 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* string_nconcat - concatenates tow strings
-*
-*@s1: string pionter
-*@s2: string pionter
-*@n: unigned int
-*
-* Return: char (success)
-*/
+ **string_nconcat - concatenates two strings.
+ *@s1 : pointer to string
+ *@s2 : pointer to string
+ *@n : int
+ *Return: pointer to string
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+unsigned int x, y, i, j;
 char *s;
-unsigned int i, j, x, y;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-for (i = 0; s1[i] != '\0'; i++)
+for (x = 0; s1[x] != '\0'; x++)
 ;
-for (j = 0; s2[j] != '\0'; j++)
+for (y = 0; s2[y] != '\0'; y++)
 ;
-s = malloc(sizeof(char) * (i + n + 1));
+if (n >= y)
+n = y;
+s = malloc(sizeof(char) * (x + n + 1));
 if (s == NULL)
 return (NULL);
-for (x = 0; s1[x] != '\0' ; x++)
+for (i = 0; s1[i] != '\0'; i++)
 s[i] = s1[i];
-for (y = i; y < i; y++)
-s[y] = s2[y - i];
-s[y] = '\0';
+for (j = x; j < x + n; j++)
+s[j] = s2[j - x];
+s[j] = '\0';
 return (s);
 }
