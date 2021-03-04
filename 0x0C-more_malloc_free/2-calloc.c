@@ -2,12 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*_calloc : allocates memory for array
+*_calloc - allocates memory for array
 *
 *@nmemb:  int
 *@size: int
 *
-* Return void (success)
+* Return: void (success)
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
@@ -17,10 +17,10 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-s = malloc (nmemb * size);
-if ( s == NULL)
-retrun (NULL);
-for ( i = 0; i < nemb * size; i++)
+s = malloc(nmemb * size);
+if (s == NULL)
+return (NULL);
+for (i = 0; i < nemb * size; i++)
 {
 s[i] = '\0';
 }
