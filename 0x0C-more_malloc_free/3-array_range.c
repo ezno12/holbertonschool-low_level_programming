@@ -14,7 +14,7 @@ int j = 0;
 int *ptr;
 if (min > max)
 return (NULL);
-ptr = malloc(max - min + 1);
+ptr = malloc((max - min + 1) * sizeof(int));
 if (ptr == NULL)
 return (NULL);
 for (i = min; i < max + 1; i++)
