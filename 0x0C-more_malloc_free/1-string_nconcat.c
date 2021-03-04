@@ -24,15 +24,16 @@ while (s1[length] != '\0')
 ++i;
 }
 j = 0;
-while (s2[j] != '\0') {
+while (s2[j] != '\0')
+{
 j++
 }
 s = malloc(sizeof(char) * (i + n + 1));
-if ( s == NULL)
+if (s == NULL)
 return (NULL);
 for (x = 0; s1[x] != '\0' ; x++)
 s[i] = s1[i];
-for ( y = i; y < i; y++)
+for (y = i; y < i; y++)
 s[y] = s2[y - i];
 s[y] = '\0';
 return (s);
