@@ -1,18 +1,17 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef DOG_HDR
+#define DOG_HDR
 /**
-* struct dog - dog type
-* @name: name of dog (pionter)
-* @age: age of the dog
-* @owner: dog owner (pionter)
-*
-* Description: struct dog contains type dogs
+*struct dog - define a new type dog
+*@name : name of dog string pionter
+*@age : age of dog float
+*@owner : owner of dog string pionter
+*Description: a new type that contains dog details.
 */
 typedef struct dog
 {
 char *name;
 float age;
-char *owner
+char *owner;
 } dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
