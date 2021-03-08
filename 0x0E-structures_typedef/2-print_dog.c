@@ -19,7 +19,7 @@ printf("(nil)\n");
 else
 {
 printf("name: %s\n", d->name);
-printf("age: %f\n", d->age);
+printf("age: %.6f\n", d->age);
 }
 if (d->owner == NULL)
 {
