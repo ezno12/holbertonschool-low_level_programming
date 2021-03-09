@@ -1,36 +1,37 @@
 #include "holberton.h"
 #include <stdlib.h>
-
 /**
- * alloc_grid - creates a 2D array of integers.
- * @width: int
- * @height:int
- *
- * Return: a double pointer to the 2D array
- */
-int **alloc_grid(int width, int height)
+*str_concat - concat two string
+*@s1: string
+*@s2: string
+*Return: char (success)
+*/
+char *str_concat(char *s1, char *s2)
 {
-int i, j;
-int **x;
-if (width <= 0 || height <= 0)
-return (NULL);
-x = (int **)malloc(sizeof(int *) * height);
-if (x == NULL)
-return (NULL);
-for (i = 0; i < height; i++)
+unsigned int i, j, k, l;
+char *s;
+if (s1 == NULL)
+i = 0;
+else
 {
-x[i] = (int *)malloc(sizeof(int) * width);
-if (x[i] == NULL)
-{
-for (j = 0; j < i; j++)
-free(x[j]);
-free(x);
-return (NULL);
+for (i = 0; s1[i]; i++)
+;
 }
-for (j = 0; j < width; j++)
+if (s2 == NULL)
+j = 0;
+else
 {
-x[i][j] = 0;
+for (j = 0; s2[j]; j++)
+;
 }
-}
-return (x);
+k = i + j + 1;
+s = malloc(k *sizeof(char));
+if (s == NULL)
+return (NULL);
+for (l = 0; l < i; l++)
+s[l] = s1[l];
+for (l = 0; l < j; l++)
+s[l + i] = s2[l];
+s[i + j] = '\0';
+return (s);
 }
