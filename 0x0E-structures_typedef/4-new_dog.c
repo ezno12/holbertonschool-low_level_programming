@@ -16,7 +16,7 @@ int len1, len2, i;
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
 return (NULL);
-for (len1 = 0; name[len1] != '\0'; len1++)
+for (len1; name[len1] != '\0'; len1++)
 ;
 for (len2 = 0; owner[len2] != '\0'; len2++)
 ;
@@ -31,7 +31,7 @@ if (dog->owner == NULL)
 {
 free(dog->name);
 free(dog->owner);
-free((dog);
+free(dog);
 return (NULL);
 }
 for (i = 0; i <= len1; i++)
