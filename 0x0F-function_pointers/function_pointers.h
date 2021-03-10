@@ -1,5 +1,5 @@
-#ifndef __FN_P_H__
-#define __FN_P_H__
+#ifndef FN_P_H
+#define FN_P_H
 #include <stdlib.h>
 int _putchar(char c);
 void print_name(char *name, void (*f)(char *));
@@ -11,3 +11,4 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
+#endif
