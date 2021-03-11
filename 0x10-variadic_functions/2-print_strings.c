@@ -3,8 +3,8 @@
 /**
 * print_strings - print all string.
 *
-*@separator: const char.
-*@n: const int.
+* @separator: const char.
+* @n: const int.
 *
 * Return: void.
 */
@@ -16,7 +16,8 @@ char *str;
 va_start(list, n);
 for (i = 0; i < n; i++)
 {
-str = va_arg(list, char *);if (str)
+str = va_arg(list, char *);
+if (str)
 printf("%s", str);
 else
 printf("(nil)");
