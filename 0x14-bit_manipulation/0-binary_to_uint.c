@@ -21,7 +21,7 @@ i = 0;
 while (b[i] == '0' || b[i] == '1')
 {
 val <<= 1;
-val += b[i]-'0';
+val += b[i] - '0';
 i++;
 }
 return (val);
