@@ -2,6 +2,9 @@
 /**
 * get_bit - return bit value.
 *
+* @n: int
+* @index: int
+*
 * Return: Always 0.
 */
 int get_bit(unsigned long int n, unsigned int index)
