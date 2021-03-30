@@ -6,29 +6,21 @@
 * Return: 1 on success, -1 on failure
 */
 int append_text_to_file(const char *filename, char *text_content)
-int fd;
-int counter;
-int write_ret;
-int close_ret;
+{
+int i, rw, len = 0;
 if (filename == NULL)
 return (-1);
-fd = open(filename, O_APPEND | O_WRONLY, S_IRUSR | S_IWUSR);
-if (fd == -1)
+i = open(filename, O_WRONLY | O_APPEND);
+if (i < 0)
 return (-1);
-if (text_content == NULL)
-return (1);
-for (counter = 0; text_content[counter] != '\0'; counter++)
-;
-if (counter == 0)
+if (text_content != NULL)
 {
-close(fd);
-return (1);
+while (text_content[len])
+len++;
+rw = write(i, text_content, len);
+if (rw < 0)
+return (-1);
 }
-write_ret = write(fd, text_content, counter);
-if (write_ret == -1)
-return (-1);
-close_ret = close(fd);
-if (close_ret == -1)
-return (-1);
+close(i);
 return (1);
 }
