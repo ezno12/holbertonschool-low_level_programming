@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * main - check the code for Holberton School students.
+ * print_dlistint - print the element of double linked list.
  *
  * @h: head of first element in node.
  *
@@ -12,9 +12,9 @@ dlistint_t temp = h;
 size_t i = 0;
 while (temp != NULL)
 {
-printf("%d ", temp->data);
+printf("%d\n", temp->data);
 temp = temp->next;
 i += 1;
 }
-return(i);
+return (i);
 }
