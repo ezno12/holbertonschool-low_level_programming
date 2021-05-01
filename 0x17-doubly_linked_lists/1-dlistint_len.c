@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * dlistint_len - check the code for Holberton School students.
+ * dlistint_len - find lenth of double linked list.
  *
  * @h: first elemnt in list.
  *
