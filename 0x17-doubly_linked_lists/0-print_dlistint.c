@@ -8,12 +8,11 @@
 */
 size_t print_dlistint(const dlistint_t *h)
 {
-dlistint_t temp = h;
 size_t i = 0;
 while (temp != NULL)
 {
-printf("%d\n", temp->data);
-temp = temp->next;
+printf("%d\n", h->data);
+h = h->next;
 i += 1;
 }
 return (i);
