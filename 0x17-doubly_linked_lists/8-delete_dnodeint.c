@@ -11,29 +11,56 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-dlistint_t *deleteNode;
-dlistint_t *temp;
-unsigned int counter = 0;
-if (head == NULL || *head == NULL)
-return (-1);
-temp = *head;
-while (temp != NULL)
-{
-if (index == counter + 1)
-{
-deleteNode = temp->next;
-temp->next = deleteNode->next;
-free(deleteNode);
-return (1);
+	dlistint_t *start;
+	unsigned int i;
+	unsigned int len = len_node(head);
+
+	start = *head;
+	if (*head == NULL)
+		return (-1);
+
+	if (index == 0)
+	{
+		start = start->next;
+		free(*head);
+		*head = start;
+		if (start != NULL)
+			start->prev = NULL;
+		return (1);
+	}
+	for (i = 0; i <= index - 1; i++)
+	{
+		start = start->next;
+		if (!start)
+			return (-1);
+	}
+	if (len - 1 == index)
+	{
+		start->prev->next = NULL;
+		free(start);
+		return (1);
+	}
+	start->prev->next = start->next;
+	start->next->prev = start->prev;
+	free(start);
+	return (1);
 }
-if (index == 0)
+/**
+ * len_node - list len
+ *
+ * @node:list
+ * Return:unsigned int
+ */
+unsigned int len_node(dlistint_t **node)
 {
-*head = temp->next;
-free(temp);
-return (1);
-}
-temp = temp->next;
-counter++;
-}
-return (-1);
+	unsigned int len = 0;
+	dlistint_t *start;
+
+	start = *node;
+	while (start != NULL)
+	{
+		len += 1;
+		start = start->next;
+	}
+	return (len);
 }
