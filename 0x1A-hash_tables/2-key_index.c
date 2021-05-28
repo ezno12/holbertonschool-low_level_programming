@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 /**
  * key_index - check index of a key in hash table.
- * 
+ *
  * @key: pionter, char, data table.
  * @size: size of hash table.
  *
