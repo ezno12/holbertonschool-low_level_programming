@@ -45,4 +45,4 @@ node->next = ht->array[index];
 ht->array[index] = node;
 return (1);
 }
-}
+
