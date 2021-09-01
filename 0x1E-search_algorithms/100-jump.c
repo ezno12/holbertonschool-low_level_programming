@@ -24,13 +24,13 @@ while (array[m] <= value && m < size)
 /* the control will continue to jump the blocks */
 i = m; /* shift the block */
 m += sqrt(size);
-printf("Value checked array [%zu] = [%zu]\n", i, m);
+printf("Value checked array [%i] = [%i]\n", i, m);
 if (m > size - 1)
 {
 return (-1);
 }
 }
-printf("Value found between indexes [%zu] and [%zu]\n", i, m);
+printf("Value found between indexes [%i] and [%i]\n", i, m);
 for (x = i; x < m; x++)
 {
 /* linear search in current block */
