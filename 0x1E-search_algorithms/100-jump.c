@@ -18,9 +18,8 @@ if (array == NULL)
 {
 return (-1);
 }
-do
-{
-/* the control will continue to jump the blocks */ 
+do {
+/* the control will continue to jump the blocks */
 printf("Value checked array[%zu] = [%d]\n", i, array[i]);
 i += m;
 if (i >= size)
