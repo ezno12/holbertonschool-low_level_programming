@@ -36,5 +36,6 @@ if (value == array[low])
 {
 return (low);
 }
+printf("Value checked array[%d] is out of range\n", high);
 return (-1);
 }
