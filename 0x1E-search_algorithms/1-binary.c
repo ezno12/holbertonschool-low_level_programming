@@ -24,10 +24,10 @@ return (-1);
 while (first <= last)
 {
 printf("Searching in array: ");
-for (i = l; i <= r; ++i)
+for (mid = first; mid <= last; ++mid)
 {
-printf("%d", array[i]);
-if (i < r)
+printf("%d", array[mid]);
+if (mid < last)
 printf(", ");
 }
 printf("\n");
