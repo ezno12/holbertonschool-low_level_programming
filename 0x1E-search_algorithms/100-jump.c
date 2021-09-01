@@ -36,6 +36,7 @@ for (x = i; x < m; x++)
 /* linear search in current block */
 if (array[x] == value)
 {
+printf("Value checked array [%zu] = [%zu]\n", i, m);
 return (x); /* position of element being searched */
 }
 }
