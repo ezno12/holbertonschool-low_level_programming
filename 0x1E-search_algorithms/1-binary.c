@@ -23,6 +23,14 @@ return (-1);
 }
 while (first <= last)
 {
+printf("Searching in array: ");
+for (i = l; i <= r; ++i)
+{
+printf("%d", array[i]);
+if (i < r)
+printf(", ");
+}
+printf("\n");
 mid = (first + last) / 2;
 if (array[mid] < value)
 {
